@@ -1,0 +1,4 @@
+REPOSITORY                                TAG       IMAGE ID       CREATED         SIZE
+accounts                                  1         995dd6654f30   7 minutes ago   205MB
+us.icr.io/sn-labs-vaibhavpatol/accounts   1         995dd6654f30   7 minutes ago   205MB
+postgres                                  alpine    bb46dc8bfad7   2 years ago     248MB

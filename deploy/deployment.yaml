@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: accounts
+  labels:
+    app: accounts
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: accounts
+  template:
+    metadata:
+      labels:
+        app: accounts
+    spec:
+      imagePullSecrets:
+      - name: icr
+      containers:
+      - name: accounts
+        image: us.icr.io/sn-labs-vaibhavpatol/accounts:1
+        ports:
+        - containerPort: 8080
+        env:
+        - name: DATABASE_URI
+          value: "postgresql://postgres:pgs3cr3t@postgresql:5432/postgres"
