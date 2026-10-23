@@ -24,6 +24,6 @@ It should not Create an Account when sending the wrong media type ... ok
 It should Update an existing Account ... ok
 
 ----------------------------------------------------------------------
-Ran 24 tests in 0.800s
+Ran 24 tests in 0.651s
 
 OK
