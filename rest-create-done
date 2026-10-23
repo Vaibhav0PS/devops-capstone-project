@@ -1,0 +1,10 @@
+$ curl -i -X POST http://localhost:8000/accounts -H "Content-Type: application/json" -d '{"name":"John Doe","email":"john@example.com","address":"123 Main St","phone_number":"555-1234","date_joined":"2024-01-01"}'
+HTTP/1.1 201 CREATED
+Server: Werkzeug/2.1.2 Python/3.9.25
+Date: Fri, 23 Oct 2026 09:16:10 GMT
+Content-Type: application/json
+Content-Length: 132
+Location: http://localhost:8000/accounts/40
+Connection: close
+
+{"address":"123 Main St","date_joined":"2024-01-01","email":"john@example.com","id":40,"name":"John Doe","phone_number":"555-1234"}
